@@ -31,8 +31,8 @@ public class Payment {
 
     @OneToMany(mappedBy="payment", fetch = FetchType.LAZY, cascade = {
         CascadeType.PERSIST, CascadeType.MERGE, 
-        CascadeType.REFRESH, CascadeType.DETACH,
+        CascadeType.REFRESH, CascadeType.DETACH
     })
-    private List<Order> orders;
+    private List<Order> orderList;
     
 }

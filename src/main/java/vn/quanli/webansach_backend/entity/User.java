@@ -18,11 +18,11 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "user")
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id ")
+    @Column(name = "user_id")
     private int userId;
     @Column(name = "first_name", length = 256)
     private String  firstName;
@@ -53,7 +53,7 @@ public class User {
     // Relationship with FavoriteBooks
     @OneToMany(mappedBy="user", fetch = FetchType.LAZY, cascade = {
         CascadeType.PERSIST, CascadeType.MERGE, 
-        CascadeType.REFRESH, CascadeType.DETACH, 
+        CascadeType.REFRESH, CascadeType.DETACH
     })
     private List<FavoriteBooks> favoriteBooksList;
 
@@ -71,7 +71,7 @@ public class User {
     // Relationship with Order
     @OneToMany(mappedBy="user", fetch = FetchType.LAZY, cascade = {
         CascadeType.PERSIST, CascadeType.MERGE, 
-        CascadeType.REFRESH, CascadeType.DETACH, 
+        CascadeType.REFRESH, CascadeType.DETACH
     })
     private List<Order> orderList;
 }
