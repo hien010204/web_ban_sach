@@ -1,4 +1,4 @@
-package vn.quanli.webansach_backend.repository;
+package vn.quanli.webansach_backend.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
