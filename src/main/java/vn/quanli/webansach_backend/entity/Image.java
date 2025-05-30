@@ -25,7 +25,7 @@ public class Image {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "image_id")
     private int imageId;
-    @Column(name = "image_name")
+    @Column(name = "image_name", columnDefinition= "nvarchar(256)")
     private String imageName;
     @Column(name = "is_icon")
     private boolean isIcon;

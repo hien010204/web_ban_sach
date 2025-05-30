@@ -24,9 +24,9 @@ public class Order {
     private int orderId;
     @Column(name = "created_date")
     private Date createdDate;
-    @Column(name = "shipping_address", length = 512)
+    @Column(name = "shipping_address", columnDefinition = "NVARCHAR(512)")
     private String shippingAddress;
-    @Column(name = "billing_address", length = 512)
+    @Column(name = "billing_address", columnDefinition = "NVARCHAR(512)")
     private String billingAddress;
     @Column(name = "total_price")
     private double totalPrice;

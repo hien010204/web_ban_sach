@@ -23,7 +23,7 @@ public class Delivery{
     private int deliveryId;
     @Column(name = "delivery_method", length = 256, nullable = false)
     private String deliveryMethod;
-    @Column(name = "description", columnDefinition = "TEXT")
+    @Column(name = "description", columnDefinition = "NVARCHAR(MAX)")
     private String desciption;
     @Column(name = "delivery_fee", nullable = false)
     private double deliveryFee;

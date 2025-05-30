@@ -24,9 +24,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
     private int userId;
-    @Column(name = "first_name", length = 256)
+    @Column(name = "first_name", columnDefinition= "nvarchar(256)")
     private String  firstName;
-    @Column(name = "middle_name", length = 256)
+    @Column(name = "middle_name", columnDefinition= "nvarchar(256)")
     private String middleName;
     @Column(name = "user_name", length = 256)
     private String userName;
@@ -38,9 +38,9 @@ public class User {
     private char gender;
     @Column(name = "phone_number")
     private String phoneNumber;
-    @Column(name = "shipping_address")
+    @Column(name = "shipping_address", columnDefinition= "nvarchar(256)")
     private String shippingAddress;
-    @Column(name = "billing_address")
+    @Column(name = "billing_address", columnDefinition= "nvarchar(256)")
     private String billingAddress;
 
     // Relationship with OrderDetails

@@ -22,7 +22,7 @@ public class Review {
     private long reviewId;
     @Column(name = "score")
     private float score;
-    @Column(name = "comment", columnDefinition = "TEXT")
+    @Column(name = "comment", columnDefinition = "NVARCHAR(MAX)")
     private String comment;
 
     // Relationship with Book

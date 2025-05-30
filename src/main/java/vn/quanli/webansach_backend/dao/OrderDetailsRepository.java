@@ -1,11 +1,11 @@
 package vn.quanli.webansach_backend.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import vn.quanli.webansach_backend.entity.OrderDetails;
 
-@Repository
+@RepositoryRestResource(path = "order-details")
 public interface  OrderDetailsRepository extends JpaRepository<OrderDetails, Long>{
     
 }

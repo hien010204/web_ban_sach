@@ -24,13 +24,13 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "book_id")
     private int bookId;
-    @Column(name = "book_name")
+    @Column(name = "book_name", columnDefinition= "NVARCHAR(256)")
     private String bookName;
-    @Column(name = "author_name", length = 256)
+    @Column(name = "author_name", columnDefinition= "NVARCHAR(256)")
     private String authorName;
     @Column(name = "isbn", length = 256)
     private String ISBN;
-    @Column(name = "description", columnDefinition = "TEXT")
+    @Column(name = "description", columnDefinition = "NVARCHAR(MAX)")
     private String description;
     @Column(name = "listed_price")
     private double listedPrice; 

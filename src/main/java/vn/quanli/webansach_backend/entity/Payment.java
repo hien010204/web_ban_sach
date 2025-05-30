@@ -23,7 +23,7 @@ public class Payment {
     private int paymentId;
     @Column(name = "payment_method", length = 256, nullable = false)
     private String paymentMethod;
-    @Column(name = "description", columnDefinition = "TEXT")
+    @Column(name = "description", columnDefinition = "NVARCHAR(MAX)")
     private String desciption;
     @Column(name = "payment_fee", nullable = false)
     private double paymentFee;
