@@ -13,7 +13,7 @@ import vn.quanli.webansach_backend.entity.Category;
 @Configuration
 public class MethodConfig implements RepositoryRestConfigurer {
 
-    private String url = "http://localhost:8080";
+    private String url = "http://localhost:3000";
     @Autowired
     private EntityManager entityManager;
     @Override

@@ -31,7 +31,7 @@ public class Image {
     private boolean isIcon;
     @Column(name = "image_url")
     private String imageUrl;
-    @Column(name = "data")
+    @Column(name = "data", columnDefinition = "longText")
     @Lob
     private int data;
 
